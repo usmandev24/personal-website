@@ -1,5 +1,6 @@
 @import "tailwindcss" source(none);
 @source '../../index.html';
+@source '../../projects/file-shifter.html';
 @plugin "daisyui" {
   theme: 'greenp' --default
 }
