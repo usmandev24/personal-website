@@ -52,8 +52,9 @@
     <section id="home" class="hero min-h-screen bg-base-200 pt-20">
       <div class="hero-content text-center">
         <div class="max-w-lg">
-          <h1 class="text-5xl font-bold">Hello, I'm
-            <span class="block pt-4">Usman Ghani</span> </h1>
+          <h1 class="text-5xl font-bold">
+            Hello, I'm <span class="block pt-4">Usman Ghani</span>
+          </h1>
           <p class="py-6 text-xl">
             Aspiring Backend Developer | Currently Learning Node.js, Express,
             Databases and devOps on Debian Linux
@@ -104,8 +105,14 @@
         <h2 class="text-4xl font-bold text-center mb-12">
           Current Skills (In Progress)
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- JavaScript (ES6+) -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png"
+              alt="JavaScript Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">JavaScript (ES6+)</p>
             <progress
               class="progress progress-primary w-full"
@@ -113,7 +120,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- CSS TailwindCSS -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+              alt="Tailwind CSS Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">CSS TailwindCSS</p>
             <progress
               class="progress progress-primary w-full"
@@ -121,7 +135,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- Node.js -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"
+              alt="Node.js Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">Node.js</p>
             <progress
               class="progress progress-primary w-full"
@@ -129,7 +150,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- Express.js -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/express-js-icon.svg"
+              alt="Express.js Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">Express.js</p>
             <progress
               class="progress progress-primary w-full"
@@ -137,15 +165,36 @@
               max="100"
             ></progress>
           </div>
-          <div>
-            <p class="font-semibold mb-2">Databases (MySQl/PostgreSQL)</p>
+
+          <!-- Databases (MySQL/PostgreSQL) -->
+          <div class="flex flex-col items-center text-center">
+            <div class="flex gap-4 mb-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
+                alt="MySQL Logo"
+                class="h-12 w-12 object-contain"
+              />
+              <img
+                src="https://download.logo.wine/logo/PostgreSQL/PostgreSQL-Logo.wine.png"
+                alt="PostgreSQL Logo"
+                class="h-12 w-12 object-contain"
+              />
+            </div>
+            <p class="font-semibold mb-2">Databases (MySQL/PostgreSQL)</p>
             <progress
               class="progress progress-primary w-full"
               value="50"
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- Prisma.js -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://miro.medium.com/0*VRlI0n8V_zvnoKpB.jpg"
+              alt="Prisma Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">Prisma.js</p>
             <progress
               class="progress progress-primary w-full"
@@ -153,7 +202,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- Python -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://1000logos.net/wp-content/uploads/2020/08/Python-Logo.png"
+              alt="Python Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">Python</p>
             <progress
               class="progress progress-primary w-full"
@@ -161,7 +217,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- Git -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://cdn.freebiesupply.com/logos/thumbs/2x/git-logo.png"
+              alt="Git Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">Git</p>
             <progress
               class="progress progress-primary w-full"
@@ -169,7 +232,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- TypeScript -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://www.typescriptlang.org/images/branding/logo-grouping.svg"
+              alt="TypeScript Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">TypeScript</p>
             <progress
               class="progress progress-primary w-full"
@@ -177,7 +247,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- Next.js -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://i.pinimg.com/736x/4a/2b/e7/4a2be73b1e2efb44355436c40bf496dd.jpg"
+              alt="Next.js Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">Next.js</p>
             <progress
               class="progress progress-primary w-full"
@@ -185,7 +262,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- React.js -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://assets.stickpng.com/images/62a74dfe223343fbc2207d02.png"
+              alt="React.js Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">React.js</p>
             <progress
               class="progress progress-primary w-full"
@@ -193,7 +277,14 @@
               max="100"
             ></progress>
           </div>
-          <div>
+
+          <!-- DevOps Knowledge -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="https://p1.hiclipart.com/preview/308/533/209/logo-blue-line-devops-azure-electric-blue-symbol-png-clipart.jpg"
+              alt="DevOps Logo"
+              class="h-16 w-16 mb-4 object-contain"
+            />
             <p class="font-semibold mb-2">DevOps Knowledge</p>
             <progress
               class="progress progress-primary w-full"
@@ -256,7 +347,9 @@
       </div>
     </section>
 
-    <footer class="flex flex-col gap-4  items-center p-10 bg-base-300 text-base-content">
+    <footer
+      class="flex flex-col gap-4 items-center p-10 bg-base-300 text-base-content"
+    >
       <div class="flex gap-8">
         <!-- GitHub Icon -->
         <a
