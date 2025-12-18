@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en" data-theme="greenp">
   <head>
     <meta charset="UTF-8" />
@@ -5,14 +6,18 @@
     <title>Usman Ghani - Aspiring Backend Developer</title>
     <link rel="stylesheet" href="./public/stylesheets/styles.css" />
   </head>
-  <body class="bg-base-100 text-base-content min-h-screen flex flex-col">
-    <div class="navbar bg-base-200 shadow-lg fixed top-0 z-10 w-full">
+  <body
+    class="bg-base-100 text-base-content min-h-screen flex flex-col scroll-smooth"
+  >
+    <div
+      class="navbar bg-base-200/80 backdrop-blur-md border-b border-base-content/5 fixed top-0 z-50 w-full px-4 lg:px-20"
+    >
       <div class="navbar-start">
         <div class="dropdown lg:hidden">
-          <div tabindex="0" role="button" class="btn btn-ghost">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -27,69 +32,323 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-md sm:menu-lg dropdown-content bg-base-300 rounded-box z-10 mt-3 w-52 p-4 shadow"
+            class="menu menu-md  dropdown-content bg-base-200 rounded-box z-10 mt-3 w-52 p-2 shadow-2xl border border-base-300"
           >
             <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-
-        <a href="#" class="btn btn-ghost text-xl">Usman Ghani</a>
+        <a
+          href="#"
+          class="btn btn-ghost text-xl font-black italic tracking-tighter text-primary"
+          >USMAN GHANI</a
+        >
       </div>
 
-      <div class="navbar-center hidden text-lg lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-2 px-1 font-medium">
+          <li>
+            <a href="#home" class="hover:text-primary transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-primary transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover:text-primary transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-primary transition-colors"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-primary transition-colors"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
-      <div class="navbar-end"></div>
+      <div class="navbar-end">
+        <span class="badge badge-outline badge-sm opacity-50 hidden sm:flex"
+          >Debian Linux Environment</span
+        >
+      </div>
     </div>
-    <section id="home" class="hero min-h-screen bg-base-200 pt-20">
-      <div class="hero-content text-center">
-        <div class="max-w-lg">
-          <h1 class="text-5xl font-bold">
-            Hello, I'm <span class="block pt-4">Usman Ghani</span>
+
+    <section
+      id="home"
+      class="hero min-h-screen bg-base-200 relative overflow-hidden py-20 mb-20"
+    >
+      <div class="absolute inset-0 opacity-5 pointer-events-none">
+        <div
+          class="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full filter blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-96 h-96 bg-secondary rounded-full filter blur-3xl"
+        ></div>
+      </div>
+
+      <div class="hero-content text-center z-10">
+        <div class="max-w-2xl">
+
+          <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter">
+            Hello, I'm <br />
+            <span class="text-primary bg-clip-text">Usman Ghani</span>
           </h1>
-          <p class="py-6 text-xl">
-            Aspiring Backend Developer | Currently Learning Node.js, Express,
-            Databases and devOps on Debian Linux
+
+          <p
+            class="text-xl md:text-2xl font-medium opacity-90 leading-relaxed mb-4"
+          >
+            Aspiring
+            <span class="text-secondary italic">Backend Developer</span>
           </p>
-          <p class="py-4 text-lg opacity-90">
-            I am focused on building a strong foundation through hands-on
-            practice. Not seeking work at this time—prioritizing learning first.
+
+          <p class="text-lg opacity-70 max-w-xl mx-auto leading-relaxed mb-10">
+            Developing a strong foundation in
+            <span class="font-mono text-primary">Node.js</span>,
+            <span class="font-mono text-primary">Express</span>,
+            <span class="font-mono text-primary">User Authentication</span>, and
+            <span class="font-mono text-primary">Databases</span>. Prioritizing
+            deep learning through hands-on practice.
           </p>
-          <div class="flex justify-center gap-4">
-            <a href="#about" class="btn btn-primary">Learn More</a>
-            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="#projects"
+              class="btn btn-primary btn-lg px-10 shadow-xl group"
+            >
+              View Projects
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-outline btn-lg px-10">Learn More</a>
           </div>
         </div>
       </div>
     </section>
-    <section id="about" class="py-20 px-8 bg-base-100">
+
+    <!--Projects section-->
+
+    <section id="projects" class="py-24 px-8 bg-base-200">
+      <div class="container mx-auto max-w-4xl text-center">
+        <h2 class="text-5xl font-black mb-8">My Projects</h2>
+        <p class="text-xl max-w-2xl mx-auto opacity-70 leading-relaxed">
+          These are small hands-on projects I've built while learning backend
+          development on Debian Linux. They focus on core concepts like DOM
+          manipulation, TailwindCSS styling, and Node.js internals.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-12 px-8 bg-base-200">
+      <div class="container mx-auto max-w-7xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+        >
+          <div
+            class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-base-300/50"
+          >
+            <figure class="px-6 pt-6">
+              <img
+                src="public/img/file_shifter-shot.png"
+                alt="File Shifter"
+                class="rounded-xl object-cover h-48 w-full bg-base-300"
+              />
+            </figure>
+            <div class="card-body p-6">
+              <h2 class="card-title text-2xl font-bold mb-4">File Shifter</h2>
+              <ul class="space-y-4 mb-6">
+                <li class="flex flex-col gap-1">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Core Architecture</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Lightweight Node.js LAN server built exclusively with core
+                    modules.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1 border-t border-base-200 pt-3">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Data Handling</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Supports resumable uploads and real-time progress
+                    monitoring.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1 border-t border-base-200 pt-3">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Development Focus</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Deep-dive into low-level HTTP protocols and Node.js
+                    internals.
+                  </p>
+                </li>
+              </ul>
+              <div
+                class="card-actions justify-end pt-4 border-t border-base-200"
+              >
+                <a href="https://github.com/usmandev24/file_shifter?tab=readme-ov-file" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="https://github.com/usmandev24/file_shifter" target="_blank" class="btn btn-outline btn-sm">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-base-300/50"
+          >
+            <figure class="px-6 pt-6">
+              <img
+                src="public/img/calculatorx_shot.png"
+                alt="CalculatorX"
+                class="rounded-xl object-cover h-48 w-full bg-base-300"
+              />
+            </figure>
+            <div class="card-body p-6">
+              <h2 class="card-title text-2xl font-bold mb-4">CalculatorX</h2>
+              <ul class="space-y-4 mb-6">
+                <li class="flex flex-col gap-1">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Logic Engine</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Scientific and standard computations built with Vanilla
+                    JavaScript.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1 border-t border-base-200 pt-3">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >UI/UX Features</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Dark mode support, persistent history, and daily filtering
+                    panels.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1 border-t border-base-200 pt-3">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Platform</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Optimized as a Progressive Web App (PWA) for native-like
+                    performance.
+                  </p>
+                </li>
+              </ul>
+              <div
+                class="card-actions justify-end pt-4 border-t border-base-200"
+              >
+                <a href="https://app.usman-ghani.dev" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="https://github.com/usmandev24/CalculatorX" target="_blank" class="btn btn-outline btn-sm">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-base-300/50"
+          >
+            <figure class="px-6 pt-6">
+              <img
+                src="public/img/exploading_baloons_shot.png"
+                alt="Exploding Balloons"
+                class="rounded-xl object-cover h-48 w-full bg-base-300"
+              />
+            </figure>
+            <div class="card-body p-6">
+              <h2 class="card-title text-2xl font-bold mb-4">
+                Exploding Balloons
+              </h2>
+              <ul class="space-y-4 mb-6">
+                <li class="flex flex-col gap-1">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Game Mechanics</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Event-driven gameplay loop using native JS and CSS
+                    animations.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1 border-t border-base-200 pt-3">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >DOM Optimization</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Efficient management of dynamic elements without external
+                    libraries.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1 border-t border-base-200 pt-3">
+                  <span
+                    class="text-[10px] font-black uppercase tracking-[0.2em] text-primary opacity-80"
+                    >Deployment</span
+                  >
+                  <p class="text-sm md:text-[1rem] leading-snug opacity-90">
+                    Static-site deployment optimized for ultra-fast load times.
+                  </p>
+                </li>
+              </ul>
+              <div
+                class="card-actions justify-end pt-4 border-t border-base-200"
+              >
+                <a href="https://game.usman-ghani.dev" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="https://github.com/usmandev24/Exploding_Balloons" target="_blank" class="btn btn-outline btn-sm">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24 px-8 bg-base-100">
       <div class="container mx-auto max-w-4xl">
-        <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
-        <div class="card bg-base-200 shadow-xl">
-          <div class="card-body">
-            <p class="text-lg">
-              I am a passionate aspiring backend developer currently focusing on
-              building robust server-side applications using modern tools like
-              ES6 modules, Node.js, and databases.
+        <h2 class="text-4xl font-black text-center mb-12">About Me</h2>
+        <div class="card bg-base-200 border border-base-300 shadow-2xl">
+          <div class="card-body p-8 lg:p-12 space-y-6">
+            <p class="text-lg leading-relaxed italic">
+              "I am a passionate aspiring backend developer currently focusing
+              on building robust server-side applications using modern tools
+              like ES6 modules, Node.js, and databases."
             </p>
-            <p class="text-lg mt-4">
+            <p class="text-lg leading-relaxed opacity-90">
               I am still in the learning phase and enjoy creating efficient
               solutions through consistent practice on Debian Linux.
             </p>
-            <p class="text-lg mt-4 font-semibold">
-              Important: I am not looking for any type of work, freelance, or
+            <span class="font-bold text-[1rem]"
+              >Important: I am not looking for any type of work, freelance, or
               employment opportunities right now. My primary focus is to learn
-              and grow my skills first.
-            </p>
-            <p class="text-lg mt-4">
+              and grow my skills first.</span
+            >
+            <p class="text-lg leading-relaxed opacity-90">
               Looking ahead, I am excited about innovative areas like real-time
               applications, API design, and scalable architectures to prepare
               for future contributions in web development.
@@ -99,21 +358,27 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 px-8 bg-base-200">
-      <div class="container mx-auto max-w-4xl">
-        <h2 class="text-4xl font-bold text-center mb-12">
+    <section id="skills" class="py-24 px-8 bg-base-200">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-4xl font-black text-center mb-16">
           Current Skills (In Progress)
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <!-- JavaScript (ES6+) -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/JavaScript-Logo.png"
-              alt="JavaScript Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">JavaScript (ES6+)</p>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12"
+        >
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
+              <img
+                src="public/assets/third-party-img/JavaScript-Logo.png"
+                alt="JS"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">
+              JavaScript (ES6+)
+            </p>
             <progress
               class="progress progress-primary w-full"
               value="85"
@@ -121,14 +386,17 @@
             ></progress>
           </div>
 
-          <!-- CSS TailwindCSS -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/Tailwind_CSS_Logo.svg.png"
-              alt="Tailwind CSS Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">CSS TailwindCSS</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
+              <img
+                src="public/assets/third-party-img/Tailwind_CSS_Logo.svg.png"
+                alt="Tailwind"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">CSS TailwindCSS</p>
             <progress
               class="progress progress-primary w-full"
               value="80"
@@ -136,14 +404,17 @@
             ></progress>
           </div>
 
-          <!-- Node.js -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/nodejs-1.png"
-              alt="Node.js Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">Node.js</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
+              <img
+                src="public/assets/third-party-img/nodejs-1.png"
+                alt="Node"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">Node.js</p>
             <progress
               class="progress progress-primary w-full"
               value="80"
@@ -151,14 +422,17 @@
             ></progress>
           </div>
 
-          <!-- Express.js -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/express-js-icon.svg"
-              alt="Express.js Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">Express.js</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
+              <img
+                src="public/assets/third-party-img/express-js-icon.svg"
+                alt="Express"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">Express.js</p>
             <progress
               class="progress progress-primary w-full"
               value="75"
@@ -166,66 +440,55 @@
             ></progress>
           </div>
 
-          <!-- Databases (MySQL/PostgreSQL) -->
-          <div class="flex flex-col items-center text-center">
-            <div class="flex gap-4 mb-4">
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
               <img
                 src="public/assets/third-party-img/Mysql_logo.png"
-                alt="MySQL Logo"
-                class="h-12 w-12 object-contain"
-              />
-              <img
-                src="public/assets/third-party-img/PostgreSQL-Logo.png"
-                alt="PostgreSQL Logo"
-                class="h-12 w-12 object-contain"
+                alt="SQL"
+                class="max-h-full object-contain"
               />
             </div>
-            <p class="font-semibold mb-2">Databases (MySQL/PostgreSQL)</p>
+            <p
+              class="font-bold text-sm md:text-[1rem] mb-3 text-center leading-tight"
+            >
+              Databases (SQL)
+            </p>
             <progress
               class="progress progress-primary w-full"
               value="50"
               max="100"
             ></progress>
           </div>
-
-          <!-- Prisma.js -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/prismajs.png"
-              alt="Prisma Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">Prisma.js</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
+              <img
+                src="public/assets/third-party-img/prismajs.png"
+                alt="Git"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">Prisma.js</p>
             <progress
               class="progress progress-primary w-full"
               value="50"
               max="100"
             ></progress>
           </div>
-
-          <!-- Python -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/Python-Logo.png"
-              alt="Python Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">Python</p>
-            <progress
-              class="progress progress-primary w-full"
-              value="50"
-              max="100"
-            ></progress>
-          </div>
-
-          <!-- Git -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/git-logo.png"
-              alt="Git Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">Git</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform"
+            >
+              <img
+                src="public/assets/third-party-img/git-logo.png"
+                alt="Git"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">Git</p>
             <progress
               class="progress progress-primary w-full"
               value="70"
@@ -233,14 +496,17 @@
             ></progress>
           </div>
 
-          <!-- TypeScript -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/Typescript_logo.png"
-              alt="TypeScript Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">TypeScript</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform opacity-50"
+            >
+              <img
+                src="public/assets/third-party-img/Typescript_logo.png"
+                alt="TS"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">TypeScript</p>
             <progress
               class="progress progress-primary w-full"
               value="30"
@@ -248,14 +514,17 @@
             ></progress>
           </div>
 
-          <!-- Next.js -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/nextjs_logo.png"
-              alt="Next.js Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">Next.js</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform opacity-30"
+            >
+              <img
+                src="public/assets/third-party-img/react_logo.png"
+                alt="Git"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">React.js</p>
             <progress
               class="progress progress-primary w-full"
               value="5"
@@ -263,29 +532,34 @@
             ></progress>
           </div>
 
-          <!-- React.js -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/react_logo.png"
-              alt="React.js Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">React.js</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform opacity-30"
+            >
+              <img
+                src="public/assets/third-party-img/nextjs_logo.png"
+                alt="Git"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">Next.js</p>
             <progress
               class="progress progress-primary w-full"
               value="5"
               max="100"
             ></progress>
           </div>
-
-          <!-- DevOps Knowledge -->
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="public/assets/third-party-img/devOps_logo.png"
-              alt="DevOps Logo"
-              class="h-16 w-16 mb-4 object-contain"
-            />
-            <p class="font-semibold mb-2">DevOps Knowledge</p>
+          <div class="flex flex-col items-center group">
+            <div
+              class="w-20 h-20 mb-4 flex items-center justify-center p-3 bg-base-100 rounded-2xl shadow-md group-hover:scale-110 transition-transform opacity-30"
+            >
+              <img
+                src="public/assets/third-party-img/devOps_logo.png"
+                alt="DevOps"
+                class="max-h-full object-contain"
+              />
+            </div>
+            <p class="font-bold text-sm md:text-[1rem] mb-3">DevOps</p>
             <progress
               class="progress progress-primary w-full"
               value="5"
@@ -296,22 +570,25 @@
       </div>
     </section>
 
-    <section id="contact" class="py-20 px-8 bg-base-100">
+    <section id="contact" class="py-24 px-8 bg-base-100">
       <div class="container mx-auto max-w-4xl text-center">
-        <h2 class="text-4xl font-bold mb-12">Get in Touch</h2>
-        <p class="text-lg mb-8">
+        <h2
+          class="text-4xl font-black mb-6 italic underline decoration-primary decoration-4"
+        >
+          Get in Touch
+        </h2>
+        <p class="text-xl mb-12 opacity-80 max-w-2xl mx-auto leading-relaxed">
           I'm open to discussions about learning resources, backend tips, or
           collaborative practice. Feel free to reach out!
         </p>
-        <div class="flex justify-center gap-8 flex-wrap">
-          <!-- Email Button with Icon -->
+        <div class="flex justify-center gap-6 flex-wrap">
           <a
             href="mailto:usman.dev24@gmail.com"
-            class="btn btn-primary btn-lg gap-2"
+            class="btn btn-primary btn-lg px-12 rounded-full shadow-xl hover:scale-105 transition-transform"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -328,12 +605,11 @@
           <a
             href="https://github.com/usmandev24"
             target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-neutral btn-lg gap-2"
+            class="btn btn-neutral btn-lg px-12 rounded-full shadow-xl hover:scale-105 transition-transform"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-8 w-8"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -348,16 +624,14 @@
     </section>
 
     <footer
-      class="flex flex-col gap-4 items-center p-10 bg-base-300 text-base-content"
+      class="footer footer-center p-12 bg-base-300 text-base-content border-t border-base-content/5"
     >
-      <div class="flex gap-8">
-        <!-- GitHub Icon -->
+      <div class="flex gap-6 mb-4">
         <a
           href="https://github.com/usmandev24"
           target="_blank"
           rel="noopener noreferrer"
-          class="tooltip"
-          data-tip="GitHub"
+          class="hover:text-primary transition-colors hover:scale-110 transform inline-block"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -370,8 +644,11 @@
             />
           </svg>
         </a>
-        <!-- Email Icon -->
-        <a href="mailto:usman.dev24@gmail.com" class="tooltip" data-tip="Email">
+        <a
+          href="mailto:usman.dev24@gmail.com"
+          target="_blank"
+          class="hover:text-primary transition-colors hover:scale-110 transform"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8"
@@ -388,9 +665,9 @@
           </svg>
         </a>
       </div>
-      <div>
-        <p>© 2025 Usman Ghani - Focused on Learning</p>
-      </div>
+      <p class="font-bold opacity-50 uppercase tracking-[0.3em] text-xs">
+        © 2025 Usman Ghani - Focused on Learning
+      </p>
     </footer>
   </body>
 </html>
