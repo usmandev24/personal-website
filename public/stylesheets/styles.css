@@ -1469,17 +1469,23 @@
       font-size: 0.75rem;
     }
   }
-  .text-\[0\.9rem\] {
-    font-size: 0.9rem;
+  .text-\[0\.7rem\] {
+    font-size: 0.7rem;
+  }
+  .text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
+  .text-\[0\.65rem\] {
+    font-size: 0.65rem;
+  }
+  .text-\[0\.75rem\] {
+    font-size: 0.75rem;
   }
   .text-\[0\.95rem\] {
     font-size: 0.95rem;
   }
   .text-\[1rem\] {
     font-size: 1rem;
-  }
-  .text-\[10px\] {
-    font-size: 10px;
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -1509,17 +1515,29 @@
     --tw-tracking: 0.1rem;
     letter-spacing: 0.1rem;
   }
-  .tracking-\[0\.2em\] {
-    --tw-tracking: 0.2em;
-    letter-spacing: 0.2em;
+  .tracking-\[0\.2rem\] {
+    --tw-tracking: 0.2rem;
+    letter-spacing: 0.2rem;
   }
   .tracking-\[0\.3em\] {
     --tw-tracking: 0.3em;
     letter-spacing: 0.3em;
   }
+  .tracking-\[0\.04rem\] {
+    --tw-tracking: 0.04rem;
+    letter-spacing: 0.04rem;
+  }
   .tracking-\[0\.05rem\] {
     --tw-tracking: 0.05rem;
     letter-spacing: 0.05rem;
+  }
+  .tracking-\[0\.15rem\] {
+    --tw-tracking: 0.15rem;
+    letter-spacing: 0.15rem;
+  }
+  .tracking-\[0\.25rem\] {
+    --tw-tracking: 0.25rem;
+    letter-spacing: 0.25rem;
   }
   .tracking-tighter {
     --tw-tracking: var(--tracking-tighter);
@@ -1563,12 +1581,6 @@
   }
   .opacity-70 {
     opacity: 70%;
-  }
-  .opacity-80 {
-    opacity: 80%;
-  }
-  .opacity-85 {
-    opacity: 85%;
   }
   .opacity-90 {
     opacity: 90%;
