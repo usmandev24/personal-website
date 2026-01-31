@@ -1469,6 +1469,9 @@
       font-size: 0.75rem;
     }
   }
+  .text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
   .text-\[0\.95rem\] {
     font-size: 0.95rem;
   }
@@ -1502,6 +1505,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .tracking-\[0\.1rem\] {
+    --tw-tracking: 0.1rem;
+    letter-spacing: 0.1rem;
+  }
   .tracking-\[0\.2em\] {
     --tw-tracking: 0.2em;
     letter-spacing: 0.2em;
@@ -1509,6 +1516,10 @@
   .tracking-\[0\.3em\] {
     --tw-tracking: 0.3em;
     letter-spacing: 0.3em;
+  }
+  .tracking-\[0\.05rem\] {
+    --tw-tracking: 0.05rem;
+    letter-spacing: 0.05rem;
   }
   .tracking-tighter {
     --tw-tracking: var(--tracking-tighter);
@@ -1555,6 +1566,9 @@
   }
   .opacity-80 {
     opacity: 80%;
+  }
+  .opacity-85 {
+    opacity: 85%;
   }
   .opacity-90 {
     opacity: 90%;
